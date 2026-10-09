@@ -11,6 +11,7 @@
 
 - [打分模型的训练策略：全局预训练 vs 逐文件学习](dia/scoring-pretrain-vs-perrun.md)
 - [DIA-BERT 笔记](dia/diabert-notes.md)
+- [FDR 控制的层次与语境](dia/fdr-levels-and-contexts.md)
 
 ### 谱图库
 
