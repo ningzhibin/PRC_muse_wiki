@@ -5,3 +5,5 @@
   - [FDR 控制的层次与语境](dia/fdr-levels-and-contexts.md)
 - 谱图库
   - [DPHL v2](libraries/dphl-v2.md)
+- 深度学习
+  - [Gradient 到底是什么：导数、偏导数与代码里的 grad](deep-learning/gradient-grad.md)
