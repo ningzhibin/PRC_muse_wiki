@@ -1,13 +1,11 @@
 # PRC Muse Wiki
 
-蛋白质组学知识库。每个知识点是一个独立的 Markdown 文件，同一文件内中英双语（中文在前、英文在后）。
+蛋白质组学知识库。每个知识点是一个独立的 Markdown 文件。
 
-Proteomics knowledge base. Each topic is a standalone Markdown file, bilingual within the same file (Chinese first, English after).
-
-- **Obsidian**：把这个文件夹直接打开为 vault 即可使用（中英文都可搜索）
+- **Obsidian**：把这个文件夹直接打开为 vault 即可使用
 - **在线浏览**：通过 GitHub Pages（Docsify 渲染，无需构建）
 
-## 知识点 Topics
+## 知识点
 
 ### DIA
 
@@ -16,10 +14,10 @@ Proteomics knowledge base. Each topic is a standalone Markdown file, bilingual w
 - [FDR 控制的层次与语境](dia/fdr-levels-and-contexts.md)
 - [多酶混合单发 DIA：一次混合消化物采集 + 联合库一次搜库](dia/pooled-multi-enzyme-dia.md)
 
-### 谱图库 Spectral libraries
+### 谱图库
 
 - [DPHL v2](libraries/dphl-v2.md)
 
-### 深度学习 Deep learning
+### 深度学习
 
 - [Gradient 到底是什么：导数、偏导数与代码里的 grad](deep-learning/gradient-grad.md)
