@@ -8,3 +8,5 @@
   - [DPHL v2](libraries/dphl-v2.md)
 - Deep learning
   - [What is a gradient: derivatives, partial derivatives, and grad in code](deep-learning/gradient-grad.md)
+- Peptidoglycan
+  - [PGLang cheat sheet, for proteomics people](peptidoglycan/pglang-cheatsheet.md)
