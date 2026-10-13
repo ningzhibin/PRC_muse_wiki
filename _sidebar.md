@@ -8,3 +8,5 @@
   - [DPHL v2](libraries/dphl-v2.md)
 - 深度学习
   - [Gradient 到底是什么：导数、偏导数与代码里的 grad](deep-learning/gradient-grad.md)
+- 肽聚糖
+  - [PGLang 速查：给做蛋白质组学的人](peptidoglycan/pglang-cheatsheet.md)
