@@ -5,6 +5,22 @@
   <title>PRC Muse Wiki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    #lang-toggle {
+      position: fixed;
+      top: 12px;
+      right: 64px;
+      z-index: 99;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 4px 12px;
+      font-size: 13px;
+      text-decoration: none;
+      color: #42b983;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <div id="app">加载中…</div>
@@ -14,7 +30,32 @@
       repo: 'https://github.com/ningzhibin/PRC_muse_wiki',
       loadSidebar: true,
       subMaxLevel: 2,
-      auto2top: true
+      auto2top: true,
+      plugins: [
+        function(hook) {
+          // Language toggle: 中文版在根目录，English 版在 en/ 镜像目录。
+          // The button always jumps to the same page in the other language.
+          hook.doneEach(function() {
+            var hash = window.location.hash || '#/';
+            var target, label;
+            if (/^#\/en(\/|$)/.test(hash)) {
+              target = '#/' + hash.replace(/^#\/en\/?/, '');
+              label = '中文';
+            } else {
+              target = '#/en' + (hash === '#/' ? '/' : hash.slice(1));
+              label = 'English';
+            }
+            var btn = document.getElementById('lang-toggle');
+            if (!btn) {
+              btn = document.createElement('a');
+              btn.id = 'lang-toggle';
+              document.body.appendChild(btn);
+            }
+            btn.textContent = label;
+            btn.setAttribute('href', target);
+          });
+        }
+      ]
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
