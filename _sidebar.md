@@ -10,3 +10,5 @@
   - [Gradient 到底是什么：导数、偏导数与代码里的 grad](deep-learning/gradient-grad.md)
 - 肽聚糖
   - [PGLang 速查：给做蛋白质组学的人](peptidoglycan/pglang-cheatsheet.md)
+- 翻译后修饰
+  - [S-酰化富集（Acyl-RAC）不需要特殊的搜库参数](ptm/s-acylation-acylrac-search-params.md)
