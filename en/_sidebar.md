@@ -10,3 +10,5 @@
   - [What is a gradient: derivatives, partial derivatives, and grad in code](deep-learning/gradient-grad.md)
 - Peptidoglycan
   - [PGLang cheat sheet, for proteomics people](peptidoglycan/pglang-cheatsheet.md)
+- Post-translational modifications
+  - [S-acylation enrichment (Acyl-RAC) needs no special search parameters](ptm/s-acylation-acylrac-search-params.md)
