@@ -1,4 +1,7 @@
 - [Home](README.md)
+- Paper deep reads
+  - [Salivary proteomics + metaproteomics: molecular/taxonomic signatures of T2D](papers/saliva-t2d-metaproteomics.md)
+  - [MassNet: a billion-scale AI-ready mass spectral corpus](papers/massnet-billion-scale-corpus.md)
 - DIA
   - [Scoring-model training strategies: global pretraining vs per-run learning](dia/scoring-pretrain-vs-perrun.md)
   - [DIA-BERT notes](dia/diabert-notes.md)
