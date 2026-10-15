@@ -1,4 +1,7 @@
 - [首页](README.md)
+- 文献精读
+  - [唾液蛋白质组 + 宏蛋白质组找 T2D 分子/分类学特征](papers/saliva-t2d-metaproteomics.md)
+  - [MassNet：十亿级 AI-ready 质谱语料库](papers/massnet-billion-scale-corpus.md)
 - DIA
   - [打分模型的训练策略：全局预训练 vs 逐文件学习](dia/scoring-pretrain-vs-perrun.md)
   - [DIA-BERT 笔记](dia/diabert-notes.md)
