@@ -12,3 +12,5 @@
   - [PGLang 速查：给做蛋白质组学的人](peptidoglycan/pglang-cheatsheet.md)
 - 翻译后修饰
   - [S-酰化富集（Acyl-RAC）不需要特殊的搜库参数](ptm/s-acylation-acylrac-search-params.md)
+- 色谱
+  - [超快低流速 LC-MS：柱后死体积是隐形杀手](lc/post-column-dead-volume.md)
