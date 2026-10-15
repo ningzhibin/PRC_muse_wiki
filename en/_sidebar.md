@@ -12,3 +12,5 @@
   - [PGLang cheat sheet, for proteomics people](peptidoglycan/pglang-cheatsheet.md)
 - Post-translational modifications
   - [S-acylation enrichment (Acyl-RAC) needs no special search parameters](ptm/s-acylation-acylrac-search-params.md)
+- Chromatography
+  - [Post-column dead volume: the hidden killer of ultra-fast low-flow LC-MS](lc/post-column-dead-volume.md)
