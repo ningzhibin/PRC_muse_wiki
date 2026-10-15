@@ -40,6 +40,8 @@ PGLang is a "glycan prefix + modified peptide sequence", plus a small graph synt
 
 A Lys-type stem with a D-Asp cross-bridge is written as `gm-AEK[D]A` (bracket on K, D inside). Paste into the Mass Calculator to validate — it rejects illegal attachment points.
 
+> **Verified 2026-10-14:** `D` is a legal residue, square brackets may attach to diamino K, and `gm-AEK[D]A` is correct. Theoretical masses: neutral 1010.4292, [M+H]+ 1011.4364; reduced form `gm(Red)-AEK[D]A` 1012.4448 / 1013.4521 ([M+2H]2+ 507.2297); partially amidated variant `gm-AEK[D(Am)]A` 1009.4451 / 1010.4524.
+
 ## 4. Multimers: `=` joins stem peptides, `~` joins glycan chains
 
 - `gm-AQK[GGGGG]A=gm-AQK[GGGGG]A (4-3)` — cross-linked dimer; **the donor must come first**
