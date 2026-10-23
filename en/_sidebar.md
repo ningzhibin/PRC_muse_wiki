@@ -7,6 +7,7 @@
   - [DIA-BERT notes](dia/diabert-notes.md)
   - [FDR control: levels and contexts](dia/fdr-levels-and-contexts.md)
   - [Pooled multi-enzyme single-shot DIA: one pooled-digest acquisition + union library, one search](dia/pooled-multi-enzyme-dia.md)
+  - [Where ZT Scan DIA's 1342 Hz comes from: scan-rate definitions are not comparable](dia/zt-scan-dia-scan-rate.md)
 - Spectral libraries
   - [DPHL v2](libraries/dphl-v2.md)
 - Deep learning
