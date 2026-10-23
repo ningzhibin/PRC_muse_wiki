@@ -7,6 +7,7 @@
   - [DIA-BERT 笔记](dia/diabert-notes.md)
   - [FDR 控制的层次与语境](dia/fdr-levels-and-contexts.md)
   - [多酶混合单发 DIA：一次混合消化物采集 + 联合库一次搜库](dia/pooled-multi-enzyme-dia.md)
+  - [ZT Scan DIA 的 1342 Hz 是怎么算出来的：扫描速率的口径问题](dia/zt-scan-dia-scan-rate.md)
 - 谱图库
   - [DPHL v2](libraries/dphl-v2.md)
 - 深度学习
