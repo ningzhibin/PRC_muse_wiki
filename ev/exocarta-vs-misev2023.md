@@ -1,14 +1,15 @@
-# ExoCarta vs MISEV2023：一个是数据库，一个是指南
+# ExoCarta、Vesiclepedia vs MISEV2023：两个数据库，一个指南
 
-两者常被并列提起，但**不是同一类东西**。ExoCarta 回答"以前在外泌体/小细胞外囊泡里报导过什么分子"；MISEV2023 回答"一项 EV 研究应该怎么做、怎么报导"。前者是数据汇编，后者是共识指南。MISEV2023 全文（已核查，2026-10-28）**一次也没有提到 ExoCarta**；它建议用 UniProt 的亚细胞定位/特征信息来归类候选 marker 蛋白，而不是用 ExoCarta。
+三者常被并列提起，但**不是同一类东西**。ExoCarta 和 Vesiclepedia 都是数据汇编，回答"以前在 EV 里报导过什么分子"；MISEV2023 是共识指南，回答"一项 EV 研究应该怎么做、怎么报导"。MISEV2023 全文（已核查，2026-10-28）**一次也没有提到 ExoCarta 或 Vesiclepedia**；它建议用 UniProt 的亚细胞定位/特征信息来归类候选 marker 蛋白，而不是用这两个数据库。
 
-| | ExoCarta | MISEV2023 |
-|---|---|---|
-| 是什么 | 人工整理的 cargo 数据库（蛋白、RNA、脂质） | ISEV 的立场文件/指南：最低信息要求 + 建议 |
-| 回答的问题 | 某分子以前是否在 sEV 里报导过？出现频率如何？ | 命名、取样、分离、表征、功能实验应如何做和报导？ |
-| 含不含数据 | 含，按研究/分子/物种/样品类型可查 | 不含任何 cargo 数据 |
-| 版本 | 最后发表的更新是 2016 年（见下，时效存疑） | 2024 年发表；前身 MISEV2014、MISEV2018 |
-| 引用 | Keerthikumar et al., *J Mol Biol* 2016;428:688–692 | Welsh et al., *J Extracell Vesicles* 2024;13:e12404 |
+| | ExoCarta | Vesiclepedia | MISEV2023 |
+|---|---|---|---|
+| 是什么 | 人工整理的 cargo 数据库（蛋白、RNA、脂质） | 人工整理 + 社区注释的 cargo 数据库（蛋白、RNA、脂质、代谢物），附实验质量信息 | ISEV 的立场文件/指南：最低信息要求 + 建议 |
+| 范围 | 外泌体 / sEV | **所有 EV 类别**（外泌体、ectosome/微囊泡、凋亡小体，及更新的 EP 类别） | 所有 EV/EP 研究 |
+| 回答的问题 | 某分子以前是否在 sEV 里报导过？出现频率如何？ | 某分子在各类 EV 里报导过吗？来源研究的分离/表征方法与报告透明度如何？ | 命名、取样、分离、表征、功能实验应如何做和报导？ |
+| 含不含数据 | 含，按研究/分子/物种/样品类型可查 | 含，可按样品来源、分离方法、EV 亚型、物种过滤 | 不含任何 cargo 数据 |
+| 版本 | 最后发表的更新是 2016 年（见下，时效存疑） | 最后发表的更新是 2019 年（见下，时效存疑） | 2024 年发表；前身 MISEV2014、MISEV2018 |
+| 引用 | Keerthikumar et al., *J Mol Biol* 2016;428:688–692 | Pathan et al., *Nucleic Acids Res* 2019;47:D516–D519 | Welsh et al., *J Extracell Vesicles* 2024;13:e12404 |
 
 ## ExoCarta
 
@@ -22,7 +23,37 @@
 
 **Top 100 / Top 1000 是什么。**按"被多少项独立研究报导"排序的频率榜，不是丰度榜，也不是富集榜。用法示例（Wu et al. 2025，MagNet 血浆 sEV）：Top 1000 中检出 729 个，其中 76% 相对未分级血浆富集；Top 100 全部检出，87% 富集。正确用法是把它当频率参照，再用自己的富集/耗竭数据（相对起始材料）和 MISEV 五类框架去判断。
 
-**姊妹库。**Vesiclepedia（Kalra et al., *PLoS Biol* 2012;10:e1001450；2019 年 *Nucleic Acids Res* 更新）范围更广，覆盖所有 EV 类别（外泌体、ectosome/微囊泡、凋亡小体），创刊时 >300 项研究，社区持续注释。EVpedia（Kim et al.）是另一个独立资源，不要与 Vesiclepedia 混淆。
+**与 Vesiclepedia 的关系。**见下节：同一课题组（La Trobe，Mathivanan 实验室）维护的姊妹库，Vesiclepedia 范围更广。EVpedia（Kim et al.）是另一个独立资源，不要与 Vesiclepedia 混淆。
+
+## Vesiclepedia
+
+**历史。**Kalra et al., *PLoS Biol* 2012;10:e1001450 创刊，定位就是"社区持续注释"——针对当时 >50% 的数据库不定期更新、>20% 链接失效的问题，发起社区注释项目防止数据库衰变；2019 年 *Nucleic Acids Res* 更新版（Pathan et al.）——这是能找到的最后一次发表的更新。维护方与 ExoCarta 相同（La Trobe 大学 Mathivanan 实验室，另有 Ghent 大学 Hendrix 实验室参与 2019 版）。
+
+**范围：比 ExoCarta 广。**2019 版论文原话：相比以外泌体为主的 ExoCarta，Vesiclepedia 收录**所有类别 EV**中鉴定的蛋白、RNA、脂质和代谢物——外泌体、ectosome/脱落微囊泡、凋亡小体；原核与真核来源都包括；已发表与未发表研究都收（未发表数据可设私有直至发表）。2026-10-28 核查的官网首页措辞已跟上 MISEV2023 时代：亚型列表还包括 migrasome、exopher、大 oncosome，并把 exomere/supermere 列为 extracellular particle（EP）。
+
+**内容（2019 年快照，不是现况）——注意"条目"与" unique 分子"的区别。**2019 年论文 Table 1：**1,254 项 EV 研究；蛋白条目 349,988 条，但 unique 蛋白 32,267 个；RNA 条目 38,146 条（mRNA 27,646 条/17,005 unique；miRNA 10,520 条/2,431 unique）；脂质/代谢物条目 639 条；41 个物种、172 种样品来源**。其中 648 项研究为人工注释，其余为社区贡献。所谓"条目"是"某研究中报导一次"计一次，**349,988 绝不能拿来与 ExoCarta 的 41,860 个蛋白直接比大小**。按分离方法统计：超速离心占 58%（计入联合方法则微分离心 >73%），商业试剂盒/柱子约 7%。
+
+**Vesiclepedia 独有的两样东西，ExoCarta 没有。**
+
+- **EV-METRIC / EV-TRACK 链接**：每项研究的实验页面附 EV-METRIC 评分——按该研究报导的分离与表征参数衡量"报告透明度"，并链接到 EV-TRACK 网站说明评分依据。这是判断一条历史 cargo 记录可信度的现成工具：一条蛋白记录来自 EV-METRIC 高的研究，还是只报了"超速离心 + Western"的研究，含金量不同。
+- **FunRich 插件 + 过滤下载**：整个数据库可经 FunRich 插件自动更新、做 Venn 图或富集分析；下载时可按样品来源（如癌症/干细胞）、分离方法（如密度梯度离心）、EV 亚型（如 ectosome）、物种过滤。对 PRC 来说，这意味着可以只拿"血浆 + 亲和/SEC 分离"的研究做参照，而不是拿所有 EV 研究混在一起比。
+
+**Top 100 警告——作者自己写的。**2019 版论文" pitfalls"一节原意：Vesiclepedia 的 Top 100 蛋白"仅仅意味着这些蛋白在 EV 研究中最常被报导，**不能因此称之为 EV marker 或富集蛋白**；其中一些是真正的 EV 富集蛋白，另一些可能是实验假象，在 EV 中丰度很低。"同一警告同样适用于 ExoCarta 的 Top 100/1000。作者还强调：数据库质量取决于原始研究，EV 命名缺乏全球共识、实验室间 protocol 差异大，跨研究比较并不简单。
+
+**时效警告（2026-10-28 核查）。**Vesiclepedia 官网（microvesicles.org）可以正常打开，首页措辞是最新的，但首页同样不显示任何统计数字、版本号或更新日期；没有找到更新的发表版本。因此 **2019 年数字只能作为快照引用，使用时须到网站现查**。与 ExoCarta 相比，Vesiclepedia 至少网站本身是活的（ExoCarta 统计页已 404），但"活着"不等于"数据最新"。
+
+## ExoCarta vs Vesiclepedia：选哪个？
+
+|  | ExoCarta | Vesiclepedia |
+|---|---|---|
+| 查什么 | sEV/外泌体 cargo，频率参照（Top 100/1000 最常用） | 各类 EV cargo，可按亚型/方法/物种过滤的参照 |
+| 代谢物 | 不收 | 收（与脂质合计 639 条目，2019 年） |
+| 实验质量信息 | 条目按 MISEV2014 时代最低要求注释 | 分离/表征方法 + EV-METRIC 评分 + EV-TRACK 链接 |
+| 互作/通路 | 蛋白–蛋白互作网络和通路 | FunRich 富集/网络（经插件） |
+| 最新发表更新 | 2016 年 | 2019 年 |
+| 网站状态（2026-10-28） | 首页可打开，统计页 404 | 首页可打开，无统计数字 |
+
+实际使用中两者不是二选一：先用 Vesiclepedia 按自己的样品类型/分离方法过滤出可比的研究集合，再用 ExoCarta Top 100/1000 做 sEV 频率对照；两个库的"常被报导"名单高度重叠时，结论才稳。两个库都不提供定量富集信息，富集判断永远来自自己的对照实验。
 
 ## MISEV2023
 
@@ -53,17 +84,19 @@
 
 **MISEV 不是什么。**ISEV 官网说明：它不是进入该领域的不合理门槛，不是压制创新，也不是只适用于哺乳动物/临床研究。它规定的是**最低报导要求**，不指定某一种分离方法为标准。
 
-## 两者如何配合（PRC 工作流视角）
+## 三者如何配合（PRC 工作流视角）
 
 1. **用 MISEV2023 设计和报导**：命名用 EV/sEV + 操作性定义；分离方法、起始材料量、前处理、表征方法（粒径分布 + 形态 + 五类蛋白）全部记录；质谱部分按 §6.3 + MIAPE 报导并 deposition 数据。
-2. **用 ExoCarta 做频率参照**：把鉴定列表与 ExoCarta Top 100/1000 对照，看"常被报导的 EV 相关蛋白"检出比例；但结论必须来自**相对起始材料的富集/耗竭**，不是检出数量本身。
-3. **血浆 sEV 的判断标准**：第 1/2 类 marker 富集 + 第 3 类（ALB、APOB 等）耗竭才是富集证据；总鉴定数单独不能说明富集成功。两个实例：Wu et al. 2025（MagNet 同珠 PAC 消化、谱图库、110 min 梯度）：marker 富集 >16 倍，CD9/CD63/SDCBP/NCAM1 >30 倍，ALB 耗竭约 95%，>4,000 蛋白；Suresh & Zhang 2025（MagNet 洗脱后 S-Trap 消化、21 min 梯度、library-free）：785 蛋白，约 69% 与 ExoCarta 相关、Top 100 中 60 个——**两个数字不可直接比较**，梯度、库、消化方式、血浆新鲜程度都不同。
+2. **用 Vesiclepedia 找可比的历史研究**：按样品来源、分离方法、EV 亚型、物种过滤，重点看与自己制备方式相近的研究，并用 EV-METRIC 判断那些研究的报告透明度；不要拿全库频率当自己的预期值。
+3. **用 ExoCarta 做 sEV 频率参照**：把鉴定列表与 ExoCarta Top 100/1000 对照，看"常被报导的 EV 相关蛋白"检出比例；但结论必须来自**相对起始材料的富集/耗竭**，不是检出数量本身。
+4. **血浆 sEV 的判断标准**：第 1/2 类 marker 富集 + 第 3 类（ALB、APOB 等）耗竭才是富集证据；总鉴定数单独不能说明富集成功。两个实例：Wu et al. 2025（MagNet 同珠 PAC 消化、谱图库、110 min 梯度）：marker 富集 >16 倍，CD9/CD63/SDCBP/NCAM1 >30 倍，ALB 耗竭约 95%，>4,000 蛋白；Suresh & Zhang 2025（MagNet 洗脱后 S-Trap 消化、21 min 梯度、library-free）：785 蛋白，约 69% 与 ExoCarta 相关、Top 100 中 60 个——**两个数字不可直接比较**，梯度、库、消化方式、血浆新鲜程度都不同。
 
 ## 常见误用
 
-- "在 ExoCarta Top 100 里"当成验证过的 marker——它只是出现频率高。
+- "在 ExoCarta/Vesiclepedia Top 100 里"当成验证过的 marker——它只是出现频率高，Vesiclepedia 作者自己在论文里写了这个警告。
+- 拿 Vesiclepedia 的 349,988 条蛋白"条目"去比 ExoCarta 的 41,860 个蛋白——前者是研究×蛋白的出现次数，后者是 unique 分子数，口径不同。
 - 未证明生物发生就称制备物为"exosomes"。
-- 引用 41,860 个蛋白当作 ExoCarta 当前收录量——那是 2016 年数字，且官网统计页已 404。
+- 引用 41,860 个蛋白当作 ExoCarta 当前收录量——那是 2016 年数字，且官网统计页已 404；引用 Vesiclepedia 2019 年数字时同样要标年份。
 - 用总蛋白量代表 EV 量；或只用总鉴定数判断富集好坏。
 - 只用一种表征技术就下结论（MISEV 要求正交证据）。
 
@@ -73,11 +106,12 @@
 - Mathivanan S et al. ExoCarta 2012: database of exosomal proteins, RNA and lipids. *Nucleic Acids Res* 2012;40:D1241–D1244.
 - Mathivanan S, Simpson RJ. ExoCarta: a compendium of exosomal proteins and RNA. *Proteomics* 2009;9:4997–5000.
 - Kalra H et al. Vesiclepedia: a compendium for extracellular vesicles with continuous community annotation. *PLoS Biol* 2012;10:e1001450. doi:10.1371/journal.pbio.1001450
-- Pathan M et al. Vesiclepedia 2019: a compendium of RNA, proteins, lipids and metabolites in extracellular vesicles. *Nucleic Acids Res* 2019;47:D516–D519.
+- Pathan M et al. Vesiclepedia 2019: a compendium of RNA, proteins, lipids and metabolites in extracellular vesicles. *Nucleic Acids Res* 2019;47:D516–D519. doi:10.1093/nar/gky1029 (PMCID PMC6323905)
+- Vesiclepedia. http://www.microvesicles.org/ （首页已核查 2026-10-28；无统计数字/更新日期，见上）
 - Welsh JA et al. Minimal information for studies of extracellular vesicles (MISEV2023): from basic to advanced approaches. *J Extracell Vesicles* 2024;13:e12404. doi:10.1002/jev2.12404 (PMCID PMC10850029; erratum 2024;13:e12451)
 - International Society for Extracellular Vesicles. MISEV. https://www.isev.org/misev
 - ExoCarta. http://exocarta.org/ （首页已核查 2026-10-28；统计页 404，见上）
 - Wu CC et al. MagNet: *Nat Commun* 2025;16:5447. doi:10.1038/s41467-025-60595-7 （数据 PXD042947）
 - Suresh PSS, Zhang Q. Comprehensive comparison of methods for isolation of extracellular vesicles from human plasma. *J Proteome Res* 2025;24:2956–2967. doi:10.1021/acs.jproteome.5c00149 （数据 PXD058948）
 
-*核查记录：MISEV2023 全文（PMC10850029）与 ExoCarta 首页已于 2026-10-28 逐条核对；ExoCarta 统计页在真实浏览器中返回 404。*
+*核查记录：MISEV2023 全文（PMC10850029）、ExoCarta 首页、Vesiclepedia 首页与 Pathan et al. 2019 全文（PMC6323905）已于 2026-10-28 逐条核对；ExoCarta 统计页在真实浏览器中返回 404。*
