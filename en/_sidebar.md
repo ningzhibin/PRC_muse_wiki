@@ -19,4 +19,4 @@
 - Chromatography
   - [Post-column dead volume: the hidden killer of ultra-fast low-flow LC-MS](lc/post-column-dead-volume.md)
 - Extracellular vesicles
-  - [ExoCarta vs MISEV2023: one is a database, one is a guideline](ev/exocarta-vs-misev2023.md)
+  - [ExoCarta, Vesiclepedia vs MISEV2023: two databases, one guideline](ev/exocarta-vs-misev2023.md)
