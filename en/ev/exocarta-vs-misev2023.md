@@ -1,14 +1,15 @@
-# ExoCarta vs MISEV2023: one is a database, one is a guideline
+# ExoCarta, Vesiclepedia vs MISEV2023: two databases, one guideline
 
-The two are often mentioned together, but they are **not the same kind of thing**. ExoCarta answers "what molecules have previously been reported in exosomes / small extracellular vesicles, and how often"; MISEV2023 answers "how should an EV study be done and reported". One is a data compendium, the other a consensus guideline. The full text of MISEV2023 (checked 2026-10-28) **does not mention ExoCarta once**; it points readers to UniProt subcellular-location / feature annotations for assigning candidate marker proteins to categories, not to ExoCarta.
+The three are often mentioned together, but they are **not the same kind of thing**. ExoCarta and Vesiclepedia are both data compendia, answering "what molecules have previously been reported in EVs"; MISEV2023 is a consensus guideline, answering "how should an EV study be done and reported". The full text of MISEV2023 (checked 2026-10-28) **does not mention ExoCarta or Vesiclepedia once**; it points readers to UniProt subcellular-location / feature annotations for assigning candidate marker proteins to categories, not to either database.
 
-| | ExoCarta | MISEV2023 |
-|---|---|---|
-| What it is | Manually curated cargo database (proteins, RNA, lipids) | ISEV position paper / guideline: minimal information requirements + recommendations |
-| Question it answers | Has a given molecule been reported in sEVs before? How frequently? | How should nomenclature, sampling, separation, characterisation, and functional studies be done and reported? |
-| Contains data? | Yes, searchable by study / molecule / organism / sample type | No cargo data at all |
-| Version | Last published update 2016 (see currency warning below) | Published 2024; predecessors MISEV2014, MISEV2018 |
-| Cite as | Keerthikumar et al., *J Mol Biol* 2016;428:688–692 | Welsh et al., *J Extracell Vesicles* 2024;13:e12404 |
+| | ExoCarta | Vesiclepedia | MISEV2023 |
+|---|---|---|---|
+| What it is | Manually curated cargo database (proteins, RNA, lipids) | Manually curated + community-annotated cargo database (proteins, RNA, lipids, metabolites), with experimental quality information | ISEV position paper / guideline: minimal information requirements + recommendations |
+| Scope | Exosomes / sEVs | **All EV classes** (exosomes, ectosomes/microvesicles, apoptotic bodies, plus newer EP categories) | All EV/EP research |
+| Question it answers | Has a given molecule been reported in sEVs before? How frequently? | Has a given molecule been reported in each EV class? What were the source studies' separation/characterisation methods and reporting transparency? | How should nomenclature, sampling, separation, characterisation, and functional studies be done and reported? |
+| Contains data? | Yes, searchable by study / molecule / organism / sample type | Yes, filterable by sample source, separation method, EV subtype, and organism | No cargo data at all |
+| Version | Last published update 2016 (see currency warning below) | Last published update 2019 (see currency warning below) | Published 2024; predecessors MISEV2014, MISEV2018 |
+| Cite as | Keerthikumar et al., *J Mol Biol* 2016;428:688–692 | Pathan et al., *Nucleic Acids Res* 2019;47:D516–D519 | Welsh et al., *J Extracell Vesicles* 2024;13:e12404 |
 
 ## ExoCarta
 
@@ -22,7 +23,37 @@ The two are often mentioned together, but they are **not the same kind of thing*
 
 **What "Top 100 / Top 1000" means.** A frequency ranking — how many independent studies reported the protein — not an abundance or enrichment ranking. Example of proper use (Wu et al. 2025, MagNet plasma sEVs): of the Top 1000, 729 were detected, 76% of them enriched relative to unfractionated plasma; of the Top 100, all were detected and 87% enriched. Use it as a frequency reference, then judge your own data by enrichment/depletion versus source material and the MISEV five-category framework.
 
-**Sibling database.** Vesiclepedia (Kalra et al., *PLoS Biol* 2012;10:e1001450; 2019 *Nucleic Acids Research* update) is broader, covering all EV classes (exosomes, ectosomes/microvesicles, apoptotic bodies), >300 studies at launch, with continuous community annotation. EVpedia (Kim et al.) is a separate, independent resource — do not confuse the two.
+**Relationship to Vesiclepedia.** See the next section: a sibling database maintained by the same group (La Trobe, Mathivanan laboratory), broader in scope. EVpedia (Kim et al.) is a separate, independent resource — do not confuse the two.
+
+## Vesiclepedia
+
+**History.** Launched by Kalra et al., *PLoS Biol* 2012;10:e1001450, explicitly as "continuous community annotation" — a response to the finding that >50% of databases were not regularly updated and >20% of database links were dead — with a community-annotation project to prevent database decay; updated in *Nucleic Acids Research* in 2019 (Pathan et al.) — the last published update that could be found. Maintained by the same group as ExoCarta (Mathivanan laboratory, La Trobe University; the Ghent University Hendrix laboratory co-authored the 2019 version).
+
+**Scope: broader than ExoCarta.** The 2019 paper states it directly: compared with the exosome-focused ExoCarta, Vesiclepedia catalogues proteins, RNAs, lipids, and metabolites identified in **all classes of EVs** — exosomes, ectosomes or shedding microvesicles, and apoptotic bodies — from both prokaryotic and eukaryotic sources, and from published and unpublished studies (unpublished data can stay private until publication). The homepage wording checked on 2026-10-28 has kept pace with the MISEV2023 era: the subtype list now also includes migrasomes, exophers, and large oncosomes, and exomeres/supermeres are listed as extracellular particles (EPs).
+
+**Content (2019 snapshot, not current status) — mind the "entries" vs "unique molecules" distinction.** Table 1 of the 2019 paper: **1,254 EV studies; 349,988 protein entries, but 32,267 unique proteins; 38,146 RNA entries (27,646 mRNA entries / 17,005 unique mRNAs; 10,520 miRNA entries / 2,431 unique miRNAs); 639 lipid/metabolite entries; 41 organisms, 172 sample sources**. Of the 1,254 studies, 648 were manually annotated and the rest contributed by the community. An "entry" counts one report in one study, so **349,988 must never be compared directly with ExoCarta's 41,860 proteins**. By isolation method: ultracentrifugation in 58% of studies (>73% for differential centrifugation counting combined methods), commercial kits/columns in ~7%.
+
+**Two features Vesiclepedia has that ExoCarta does not.**
+
+- **EV-METRIC / EV-TRACK links**: each study's experiment page carries an EV-METRIC score — a measure of the transparency of reporting experimental meta-annotations, based on the isolation and characterisation parameters reported — linked to the EV-TRACK website explaining how the score was reached. This is a ready-made tool for judging a historical cargo record: a protein record from a high-EV-METRIC study is worth more than one from a study that reported only "ultracentrifugation + Western blot".
+- **FunRich plugin + filtered downloads**: the whole database can be auto-updated through the FunRich plugin and compared with a user's own dataset by Venn diagrams or enrichment analysis; downloads can be filtered by sample source (e.g. cancer or stem cells), isolation method (e.g. density-gradient centrifugation), EV subtype (e.g. ectosomes), and/or species. For the PRC, that means building a reference set from studies matching one's own sample type and separation method, rather than comparing against all EV studies pooled together.
+
+**The Top 100 warning — written by the authors themselves.** The 2019 paper's "Pitfalls" section: Vesiclepedia's Top 100 proteins "merely means that these 100 proteins are most often reported in EV studies and does not warrant them to be called as EV markers or enriched proteins. While some of the proteins in the list are *bona fide* EV enriched proteins, others could be experimental artefacts and could be of low abundance in EVs." The same warning applies to ExoCarta's Top 100/1000. The authors also stress that database quality is only as good as the source studies, that EV terminology lacks global consensus, and that protocols vary between laboratories, so cross-study comparison is not trivial.
+
+**Currency warning (checked 2026-10-28).** The Vesiclepedia website (microvesicles.org) opens normally and its homepage wording is current, but like ExoCarta's it shows no counts, version number, or update date, and no later published update was found. So **the 2019 figures may only be cited as a snapshot; check the site at the time of use**. Compared with ExoCarta, Vesiclepedia's site is at least alive (ExoCarta's statistics page is a 404) — but "alive" does not mean "up to date".
+
+## ExoCarta vs Vesiclepedia: which one?
+
+| | ExoCarta | Vesiclepedia |
+|---|---|---|
+| Look up | sEV/exosome cargo, frequency reference (Top 100/1000 most used) | Cargo across EV classes, filterable by subtype / method / organism |
+| Metabolites | Not included | Included (639 lipid/metabolite entries combined, 2019) |
+| Experimental quality information | Entries annotated against MISEV2014-era minimal requirements | Separation/characterisation methods + EV-METRIC score + EV-TRACK link |
+| Interaction / pathway analysis | Protein–protein interaction networks and pathways | FunRich enrichment/network analysis (via plugin) |
+| Last published update | 2016 | 2019 |
+| Website status (2026-10-28) | Homepage opens, statistics page 404 | Homepage opens, no counts shown |
+
+In practice the two are not an either/or choice: use Vesiclepedia to find comparable historical studies filtered to your sample type and separation method, then use ExoCarta's Top 100/1000 as the sEV frequency reference; a conclusion is firmer when both "most often reported" lists agree. Neither database provides quantitative enrichment information — enrichment is always judged from one's own control experiment.
 
 ## MISEV2023
 
@@ -53,17 +84,19 @@ Rule: **analyse at least one protein from each of Categories 1, 2, and 3**; Cate
 
 **What MISEV is not.** Per the ISEV website: it is not an unreasonable barrier to field entry, not an attempt to stifle innovation, and not irrelevant to non-mammalian or clinical studies. It sets **minimum reporting requirements**; it does not prescribe one separation method as the standard.
 
-## Using the two together (PRC workflow view)
+## Using the three together (PRC workflow view)
 
 1. **Design and report with MISEV2023**: EV/sEV nomenclature with operational definitions; separation method, starting-material amount, pre-processing, and characterisation (size distribution + morphology + five-category proteins) all recorded; MS reported per §6.3 + MIAPE, with data deposited.
-2. **Use ExoCarta as a frequency reference**: compare an identification list against the ExoCarta Top 100/1000 to see the fraction of frequently reported EV-associated proteins — but draw conclusions from **enrichment/depletion relative to source material**, not from the number of identifications.
-3. **The test for plasma sEVs**: enrichment of Category 1/2 markers plus depletion of Category 3 (ALB, APOB, etc.) is the evidence; total identification count alone is not. Two examples: Wu et al. 2025 (MagNet same-bead PAC digestion, chromatogram library, 110 min gradient): markers enriched >16-fold, CD9/CD63/SDCBP/NCAM1 >30-fold, ALB depleted ~95%, >4,000 proteins; Suresh & Zhang 2025 (MagNet elution followed by S-Trap digestion, 21 min gradient, library-free): 785 proteins, ~69% ExoCarta-associated, 60 of the Top 100 — **the two numbers are not directly comparable**, because gradient length, library, digestion mode, and plasma freshness all differ.
+2. **Use Vesiclepedia to find comparable historical studies**: filter by sample source, separation method, EV subtype, and organism, and use EV-METRIC to judge the reporting transparency of those studies; do not take whole-database frequencies as expected values for your own preparation.
+3. **Use ExoCarta as an sEV frequency reference**: compare an identification list against the ExoCarta Top 100/1000 to see the fraction of frequently reported EV-associated proteins — but draw conclusions from **enrichment/depletion relative to source material**, not from the number of identifications.
+4. **The test for plasma sEVs**: enrichment of Category 1/2 markers plus depletion of Category 3 (ALB, APOB, etc.) is the evidence; total identification count alone is not. Two examples: Wu et al. 2025 (MagNet same-bead PAC digestion, chromatogram library, 110 min gradient): markers enriched >16-fold, CD9/CD63/SDCBP/NCAM1 >30-fold, ALB depleted ~95%, >4,000 proteins; Suresh & Zhang 2025 (MagNet elution followed by S-Trap digestion, 21 min gradient, library-free): 785 proteins, ~69% ExoCarta-associated, 60 of the Top 100 — **the two numbers are not directly comparable**, because gradient length, library, digestion mode, and plasma freshness all differ.
 
 ## Common misuses
 
-- Treating "in the ExoCarta Top 100" as a validated marker — it is only a high-frequency report.
+- Treating "in the ExoCarta/Vesiclepedia Top 100" as a validated marker — it is only a high-frequency report, and the Vesiclepedia authors say so themselves in the paper.
+- Comparing Vesiclepedia's 349,988 protein "entries" with ExoCarta's 41,860 proteins — the former counts study×protein occurrences, the latter unique molecules; different denominators.
 - Calling a preparation "exosomes" without evidence of biogenesis.
-- Citing 41,860 proteins as ExoCarta's current content — that is the 2016 figure, and the site's statistics page is dead (404).
+- Citing 41,860 proteins as ExoCarta's current content — that is the 2016 figure, and the site's statistics page is dead (404); the same year-labelling applies when citing Vesiclepedia's 2019 figures.
 - Using total protein as a measure of EV amount, or total identification count as a measure of enrichment.
 - Drawing conclusions from a single characterisation technique (MISEV2023 asks for orthogonal evidence).
 
@@ -73,11 +106,12 @@ Rule: **analyse at least one protein from each of Categories 1, 2, and 3**; Cate
 - Mathivanan S et al. ExoCarta 2012: database of exosomal proteins, RNA and lipids. *Nucleic Acids Res* 2012;40:D1241–D1244.
 - Mathivanan S, Simpson RJ. ExoCarta: a compendium of exosomal proteins and RNA. *Proteomics* 2009;9:4997–5000.
 - Kalra H et al. Vesiclepedia: a compendium for extracellular vesicles with continuous community annotation. *PLoS Biol* 2012;10:e1001450. doi:10.1371/journal.pbio.1001450
-- Pathan M et al. Vesiclepedia 2019: a compendium of RNA, proteins, lipids and metabolites in extracellular vesicles. *Nucleic Acids Res* 2019;47:D516–D519.
+- Pathan M et al. Vesiclepedia 2019: a compendium of RNA, proteins, lipids and metabolites in extracellular vesicles. *Nucleic Acids Res* 2019;47:D516–D519. doi:10.1093/nar/gky1029 (PMCID PMC6323905)
+- Vesiclepedia. http://www.microvesicles.org/ (homepage checked 2026-10-28; no counts or update date shown, see above)
 - Welsh JA et al. Minimal information for studies of extracellular vesicles (MISEV2023): from basic to advanced approaches. *J Extracell Vesicles* 2024;13:e12404. doi:10.1002/jev2.12404 (PMCID PMC10850029; erratum 2024;13:e12451)
 - International Society for Extracellular Vesicles. MISEV. https://www.isev.org/misev
 - ExoCarta. http://exocarta.org/ (homepage checked 2026-10-28; statistics page 404, see above)
 - Wu CC et al. MagNet: *Nat Commun* 2025;16:5447. doi:10.1038/s41467-025-60595-7 (data PXD042947)
 - Suresh PSS, Zhang Q. Comprehensive comparison of methods for isolation of extracellular vesicles from human plasma. *J Proteome Res* 2025;24:2956–2967. doi:10.1021/acs.jproteome.5c00149 (data PXD058948)
 
-*Verification note: the full text of MISEV2023 (PMC10850029) and the ExoCarta homepage were checked line by line on 2026-10-28; the ExoCarta statistics page returned a 404 in a live browser.*
+*Verification note: the full text of MISEV2023 (PMC10850029), the ExoCarta homepage, the Vesiclepedia homepage, and the full text of Pathan et al. 2019 (PMC6323905) were checked line by line on 2026-10-28; the ExoCarta statistics page returned a 404 in a live browser.*
