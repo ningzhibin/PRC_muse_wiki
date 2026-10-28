@@ -19,4 +19,4 @@
 - 色谱
   - [超快低流速 LC-MS：柱后死体积是隐形杀手](lc/post-column-dead-volume.md)
 - 细胞外囊泡
-  - [ExoCarta vs MISEV2023：一个是数据库，一个是指南](ev/exocarta-vs-misev2023.md)
+  - [ExoCarta、Vesiclepedia vs MISEV2023：两个数据库，一个指南](ev/exocarta-vs-misev2023.md)
