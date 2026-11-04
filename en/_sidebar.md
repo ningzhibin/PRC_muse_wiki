@@ -29,3 +29,4 @@
 - Sample preparation
   - [Digestion in the tip or on the tip: where six solid-phase digestion geometries put the protein](sample-prep/in-tip-digestion-geometries.md)
   - [SP3 peptide cleanup: should the post-digestion 95% ACN recapture step stay?](sample-prep/sp3-peptide-cleanup.md)
+  - [Commercial RP magnetic beads: options for secretome enrichment + on-bead digestion](sample-prep/rp-magnetic-beads.md)
