@@ -26,3 +26,6 @@
   - [Post-column dead volume: the hidden killer of ultra-fast low-flow LC-MS](lc/post-column-dead-volume.md)
 - Extracellular vesicles
   - [ExoCarta, Vesiclepedia vs MISEV2023: two databases, one guideline](ev/exocarta-vs-misev2023.md)
+- Sample preparation
+  - [Digestion in the tip or on the tip: where six solid-phase digestion geometries put the protein](sample-prep/in-tip-digestion-geometries.md)
+  - [SP3 peptide cleanup: should the post-digestion 95% ACN recapture step stay?](sample-prep/sp3-peptide-cleanup.md)
