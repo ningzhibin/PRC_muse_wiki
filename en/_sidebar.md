@@ -2,6 +2,12 @@
 - Paper deep reads
   - [Salivary proteomics + metaproteomics: molecular/taxonomic signatures of T2D](papers/saliva-t2d-metaproteomics.md)
   - [MassNet: a billion-scale AI-ready mass spectral corpus](papers/massnet-billion-scale-corpus.md)
+  - [Histone propionylation optimization + DIA window scheme comparison (the source of N34)](papers/histone-propionylation-dia-n34.md)
+  - [Villette et al. 2025 Parkinson's multi-omics — the metaproteomics (MP) layer dissected](papers/villette-2025-parkinson-multiomics.md)
+  - [DDA / DIA de novo sequencing status — the Casanovo family and Cascadia](papers/denovo-dda-dia-casanovo-cascadia.md)
+  - [Suresh & Zhang 2025 — comprehensive comparison of 9 plasma EV isolation methods](papers/suresh-zhang-2025-ev-isolation-comparison.md)
+  - [Protein Aggregation Capture for Top-Down Proteomics](papers/feltenstein-drown-2026-pac-topdown.md)
+  - [Rapid multi-omics sample preparation for mass spectrometry (BAMM)](papers/muehlbauer-2023-bamm-multiomics.md)
 - DIA
   - [Scoring-model training strategies: global pretraining vs per-run learning](dia/scoring-pretrain-vs-perrun.md)
   - [DIA-BERT notes](dia/diabert-notes.md)
