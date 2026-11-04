@@ -2,6 +2,12 @@
 - 文献精读
   - [唾液蛋白质组 + 宏蛋白质组找 T2D 分子/分类学特征](papers/saliva-t2d-metaproteomics.md)
   - [MassNet：十亿级 AI-ready 质谱语料库](papers/massnet-billion-scale-corpus.md)
+  - [组蛋白丙酰化优化 + DIA 窗口方案比较（N34 的出处）](papers/histone-propionylation-dia-n34.md)
+  - [Villette et al. 2025 帕金森多组学 — 宏蛋白质组（MP）层拆解](papers/villette-2025-parkinson-multiomics.md)
+  - [DDA / DIA de novo 测序现状 — Casanovo 系与 Cascadia](papers/denovo-dda-dia-casanovo-cascadia.md)
+  - [Suresh & Zhang 2025 — 9 种血浆 EV 分离方法全面比较](papers/suresh-zhang-2025-ev-isolation-comparison.md)
+  - [Protein Aggregation Capture for Top-Down Proteomics](papers/feltenstein-drown-2026-pac-topdown.md)
+  - [Rapid multi-omics sample preparation for mass spectrometry（BAMM）](papers/muehlbauer-2023-bamm-multiomics.md)
 - DIA
   - [打分模型的训练策略：全局预训练 vs 逐文件学习](dia/scoring-pretrain-vs-perrun.md)
   - [DIA-BERT 笔记](dia/diabert-notes.md)
