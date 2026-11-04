@@ -2,7 +2,7 @@
 
 **来源**：Muehlbauer LK, Jen A, Zhu Y, He Y, Shishkova E, Overmyer KA, Coon JJ（威斯康星大学麦迪逊分校，Coon 实验室），*Anal Chem* 2023（2023-01-17 issue）；PMID: 36594155 · PMCID: PMC10026941 · NIHMSID: NIHMS1879550。利益：Coon 是 Thermo Fisher 顾问；作者通过 WARF 就方法部分申请了临时专利。
 
-**注意**：**主文全文已读，SI（docx）未能用文本方式打开，未读**——样品量细节、珠子制备、LC-MS 仪器与梯度、搜库/FDR、代谢/脂质鉴定软件与阈值等都在 SI 里，以下凡涉及这些的一律标未核实，不猜。
+**注意**：主文全文已读；**SI（NIHMS1879550 supplement .docx）已于 2026-11-04 读完**，样品量、珠子制备、LC-MS 仪器与梯度、搜库与鉴定软件等已据 SI 核实，见文末“SI 已核实”一节。仍未解决的：蛋白梯度具体曲线（SI 只写按 in-house QC 优化）、降温到 60 °C 的原因（SI 未写）；图 S1–S5 在 SI 里是图片，面板数值未逐一抠。
 
 **一句话**：不是单篇蛋白质组学方法，而是把 SP3 逻辑扩展到多组学的前处理整合：**同一样本、一次处理，同时出代谢物 + 脂质 + 蛋白**，作者称制备约 3 小时、17 步，对比已发表多组学方法平均 22 小时、28 步（省 11 步、19 小时）。但“步数/小时数”是作者自己的计数口径（步骤定义包括 pipetting、incubation、vortexing、centrifugation、sonication、bead beating、freeze-thaw），引用时要带这个口径，不能当成普适计时。
 
@@ -38,7 +38,7 @@
 
 ### 3. 快速消化：Rapid Trypsin 60 °C、40 min，全程摇
 
-- 把过夜消化压缩到 40 min 需要两个改动：消化全程 shaking（比不摇高约 35%），温度从 Rapid Trypsin 标准的 70 °C 降到 60 °C（Fig S4a；降温的具体原因正文未展开，SI 未读，不编）。
+- 把过夜消化压缩到 40 min 需要两个改动：消化全程 shaking（比不摇高约 35%），温度从 Rapid Trypsin 标准的 70 °C 降到 60 °C（Fig S4a；降温的具体原因正文和 SI 里都未写，不编）。
 - 与过夜无珠、过夜有珠相比，深度和质量无损失。原文对半胱氨酸相关指标的表述有歧义：semi-tryptic 率与序列覆盖率“可比（分别 <1% 与 ~30% 左右）”——<1% 是绝对值还是差异，正文未展开，Fig S4b 才能定，引用时别把 <1% 当成确定的 semi-tryptic 率。
 - Missed cleavage：快速珠上流程比过夜无珠消化**少 10–20%**，与既往 SP3 羧基珠流程的报道一致。
 - 肽段疏水性偏向：GRAVY 分布总体相似，但珠上流程更偏亲水肽；驱动因素是独有肽——SP3 独有的偏亲水，溶液消化独有的偏疏水；**所有测试珠型都有这个偏向**，不是 700 nm 珠特有的。蛋白鉴定重叠原文表述为两重复间无 MBR 约 80%、有 MBR 约 95%（口径是重复间还是方法间，正文未完全展开，引用时带上这个不确定）。
@@ -55,7 +55,7 @@ Caveat：
 
 - 代谢物数字看起来偏低，作者解释是鉴定过滤严格（cosine 相似度阈值 80）。Fig 5 左侧“已发表数据”栏是各原文报告的数字直接搬运，其中 Kang 的代谢物数还按本文标准缩减过——**跨文比较口径不统一，Fig 5 只能看量级**。
 - 验证是技术重复，不是生物学重复、大队列；“磁珠法更适合机器人自动化和多孔板高通量”只是潜力陈述，本文没有自动化验证。
-- 蛋白深度（血浆 515）不能直接和 Astral DIA 的深度（数千）比：本文的 LC-MS 仪器、梯度、搜库、FDR 都在未读的 SI 里，样本量和采集方式也不同。
+- 蛋白深度（血浆 515）不能直接和 Astral DIA 的深度（数千）比：本文蛋白用 Orbitrap Eclipse + MaxQuant 1.5.2.8/Andromeda/LFQ（默认参数、MBR 默认不开），脂质/代谢物用 Q Exactive HF，样本量（血浆 5 µL）和采集方式也不同；且蛋白梯度具体曲线 SI 未给。
 
 ## 对 core facility 的借鉴（我的判断，不是原文结论）
 
@@ -63,8 +63,17 @@ Caveat：
 - **与 One-Tip 血浆法的关系**：两者都是“少步骤、单容器”思路，但方向相反——BAMM 是同一样本分出三组学，蛋白部分仍要 SPE 脱盐干燥后才能上机；One-Tip 是血浆在 C18 tip 内直接酶解上机。BAMM 的“3 小时”只是制备完成可上机，LC-MS 时间另计，别理解成 3 小时出三组学数据。
 - **最直接的借鉴**：如果将来有客户拿珍贵样本要求代谢 + 脂质 + 蛋白同批做，BAMM 是现成框架；但 core 目前不提供代谢/脂质服务时，单借“未修饰珠 + 快速消化”这两点需要先在自己的样本上单独验证，不能照搬全流程。
 
-## 未读 / 未核实清单
+## SI 已核实（2026-11-04 补，NIHMS1879550 supplement）
 
-- SI 全文：各样本型的具体样品量、珠子洗涤与储存、LC-MS 仪器与梯度、搜库引擎与 FDR、代谢/脂质鉴定软件与阈值、Fig S1–S5 与 Table S1。
+- **样品量**：小鼠脑每管 15±2 mg 冻存粉碎组织；血浆每次 5 µL（常规实验用 BioIVT 混合血浆 NaHep Lot HMN378062，Fig 5 与 Fig S5 用 NIST SRM 1950）；酵母每管约 500 µg 蛋白；脂肪细胞与 HEK293 未给量，只写培养与收获条件。
+- **珠子制备**：Cytiva SeraSil-Mag 700，按 10:1 配够量，Nanopure 水洗 1–2 次后重悬于水，4 °C 保存；样品蛋白量凭经验估计或 NanoDrop 280 nm（1 Abs = 1 mg/mL）测定。
+- **脂质 LC-MS**：Vanquish 进样 + Waters Acquity CSH C18（2.1×100 mm，1.7 µm，50 °C），400 µL/min，约 28 分钟梯度；Q Exactive HF、HESI-II、正负切换 Top2，MS1 30k、200–2000 m/z；鉴定用 Compound Discoverer 2.1+ 与 LipiDex。
+- **代谢物 LC-MS**：Vanquish 进样 + Millipore SeQuant ZIC-pHILIC（2.1×100 mm，5 µm，50 °C），150 µL/min，约 35 分钟梯度；Q Exactive HF、正负切换 Top10，MS1 60k、70–900 m/z；鉴定用 TraceFinder 4.1 + Compound Discoverer 3.3，靶向特征见 Table S1（m/z 与保留时间表）。
+- **蛋白 LC-MS 与搜库**：UltiMate WPS-3000RS 进样，1 µg 肽段上自装 PicoFrit 柱（30 cm、1.7 µm BEH C18、75×360 µm，50 °C），300 nL/min；Orbitrap Eclipse，MS1 240k、300–1350 m/z、1 秒 cycle、离子阱 turbo MS/MS、NCE 25%、APD 开；搜库 MaxQuant 1.5.2.8 + Andromeda、LFQ、默认参数，UniProt 标准 + isoform 库，match between runs 默认不开（除非注明）。
+- **其他**：内标为 SPLASH Lipidomix 5 µL + 13C/15N 氨基酸混合物 5 µL（1:100 稀释）；双相/单相比较的浓度校正方法为各相体积加总除以分析用相体积、再跨样品归一化（双相体积用玻璃 Hamilton 移液器量取）；技术重复 n=3 取均值；原始数据存 MassIVE，编号 MSV000089241。
+
+## 仍未核实
+
 - Repository 里的原始数据（小鼠脑珠型实验、n-butanol 提取的补充数据）未查。
-- 快速消化降温到 60 °C 的具体原因、semi-tryptic <1% 的口径、蛋白重叠 80%/95% 的口径，以上三处正文表述不清，需 Fig S4 / SI 才能定。
+- 快速消化降温到 60 °C 的具体原因、semi-tryptic <1% 的口径、蛋白重叠 80%/95% 的口径：正文表述不清，SI 也未写明，图 S4 为图片、面板数值未抠。
+- 蛋白梯度具体曲线：SI 只写“按 in-house QC 优化”，未给梯度表。
