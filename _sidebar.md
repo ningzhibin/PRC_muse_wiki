@@ -29,3 +29,4 @@
 - 样品制备
   - [在 tip 里还是在 tip 上酶解：六种固相酶解的几何位置与代价](sample-prep/in-tip-digestion-geometries.md)
   - [SP3 肽段回捕：消化后 95% ACN 这一步要不要留](sample-prep/sp3-peptide-cleanup.md)
+  - [市售 RP 磁珠一览：分泌组富集 + 珠上酶解的选型](sample-prep/rp-magnetic-beads.md)
