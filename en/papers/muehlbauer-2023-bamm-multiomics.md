@@ -63,6 +63,34 @@ Caveats:
 - **Relationship to the One-Tip plasma method**: both follow a "fewer steps, single container" idea, but in opposite directions — BAMM splits one sample into three omics, with the protein portion still requiring SPE desalting and drying before injection; One-Tip digests plasma directly inside a C18 tip for injection. BAMM's "3 hours" means only that preparation is complete and ready for analysis; LC-MS time is additional — do not read it as 3 hours to three-omics data.
 - **Most direct lesson**: if a client in the future brings precious samples requesting metabolites + lipids + proteins from the same batch, BAMM is a ready-made framework; but when the core does not currently offer metabolomics/lipidomics services, borrowing just "unmodified beads + accelerated digestion" needs separate validation on one's own samples and cannot be copied as a whole workflow.
 
+## Supplementary discussion (added 2026-11-04, from follow-up questions)
+
+### BAMM vs SP3: the supernatant goes from waste to data
+
+- The protein half is SP3 logic — proteins aggregate onto magnetic beads under high organic solvent and are digested on the beads. BAMM's central leap is that the supernatant SP3 throws away becomes the metabolite + lipid fractions here, so one sample processed once yields three omics without splitting aliquots per ome.
+- But "keeping the supernatant" only works because the whole front end was redesigned, not because the SP3 supernatant was simply retained: the solvent was changed to a monophasic n-butanol system (see below), the beads were changed to unmodified silica (see "Three improvements", section 2), and digestion was changed to accelerated digestion (section 3).
+- Scope: this "upgrade" is only valuable when the same sample must serve multi-omics; for protein-only work there is no evidence that BAMM beats classic SP3.
+
+### Design logic of the monophasic solvent
+
+- The design had to satisfy three requirements at once: extract lipids and metabolites into the supernatant; drive proteins to aggregate onto the beads under high organic solvent; and stay monophasic throughout — once the system phase-separates, metabolites and lipids are split between phases and the monophasic advantage is gone.
+- Roles of the components: n-butanol is an amphiphilic alcohol with strong lipid-extraction power, and raising its proportion raises lipid identifications; water is fixed at 20% because polar metabolites need an aqueous environment to stay dissolved; ACN fills the balance and bridges miscibility — n-butanol and water are not fully miscible on their own, and ACN keeps the ternary system monophasic while also being the high-organic component that drives protein aggregation in classic SP3.
+- In substance, 60% is **the highest n-butanol fraction that still stays single-phase**: for the screening data see "Three improvements", section 1 (water fixed at 20%, n-butanol scanned from 0 to 80%; phase separation at 70% and 80%). So 60% is an empirically screened optimum, not a calculated value.
+
+### Effect on proteomics: one comparison the paper does not make
+
+- **The paper contains no same-batch comparison of "n-butanol system vs pure-ACN SP3" on protein identifications**; the solvent screen's readouts were lipids and metabolites, not proteins. So no percentage difference in protein identifications can be quoted from this paper, and none is invented here.
+- What the paper does show on the protein side: the aggregation step is insensitive to conditions (similar peptide yields from bead:protein 1:1 to 20:1, almost no effect of incubation from 5 to 60 min); removing the washes cost only 3% (mouse brain); accelerated on-bead digestion lost no depth relative to overnight controls and gave 10–20% fewer missed cleavages; and the real protein-level effect is a composition shift, not a count loss — on-bead workflows (all bead types) skew toward hydrophilic peptides relative to in-solution digestion.
+- A positional caveat: in classic SP3, ACN's role is only to aggregate already-solubilized proteins onto beads, whereas the BAMM solvent must also lyse and extract, so the two are not controls at the same position. Answering the question properly needs a same-batch control of one's own: BAMM in full vs classic SP3 (ACN binding, conventional trypsin overnight), comparing identification counts, missed cleavages, and GRAVY distributions.
+
+### Are the accelerated-digestion enzyme and buffer special?
+
+- **Yes, the enzyme and buffer are proprietary; only TCEP/CAA are generic.** The kit is Promega's Rapid Digestion–Trypsin Kit (VA1060), with three components: Rapid Trypsin Gold (MS grade), Resuspension Buffer, and Rapid Digest Buffer; its standard protocol is about 60 minutes at 70 °C, compressing a conventional 4–18 hour digestion to 1 hour, with no chemical denaturant needed (heat itself unfolds the substrate). Conventional sequencing-grade trypsin has an optimum near 37 °C and denatures and autolyzes at 60–70 °C, so it cannot simply substitute for a 40-minute digestion.
+- The buffer formulation is not disclosed; Promega describes it only as optimized for rapid digestion and advises avoiding phosphate or carbonate buffers with this kit, with samples dissolved in pure water or Tris at 25 mM or lower, pH 7.0–8.0.
+- BAMM made three adaptations of its own to the standard protocol (none of them from the kit manual): temperature lowered from 70 °C to 60 °C (reason not stated); time compressed from about 60 minutes to 40 minutes, but with shaking throughout (1000 rpm; without shaking about 35% lower — the kit itself is an in-solution digestion that does not strictly require shaking, whereas BAMM's on-bead digestion needs shaking to keep the beads suspended and accessible to the enzyme); and buffer diluted to 75% (reason not stated).
+- TCEP/CAA are not special: 5 mM TCEP + 20 mM CAA is conventional reduction/alkylation (at half the concentrations of BAMM's overnight control, 10 mM / 40 mM), and the kit states compatibility with reducing/alkylating reagents. A Trypsin/Lys-C mixed version of the kit exists (VA1061); BAMM used the trypsin-only version.
+- One assumption not separately tested: because BAMM digests without washing, the digestion mixture carries residual n-butanol extraction solvent, so the buffer's tolerance of that carryover is part of what makes this combination work — but the paper does not test that point separately.
+
 ## Verified from the SI (added 2026-11-04, NIHMS1879550 supplement)
 
 - **Sample amounts**: mouse brain, 15±2 mg of frozen pulverized tissue per tube; plasma, 5 µL per extraction (pooled BioIVT plasma, NaHep Lot HMN378062, for routine experiments; NIST SRM 1950 for Figures 5 and S5); yeast, about 500 µg of protein per pellet; adipocytes and HEK293, no amounts given, only culture and harvest conditions.
@@ -77,3 +105,5 @@ Caveats:
 - Raw data in the repository (mouse brain bead-type experiments, supplementary n-butanol extraction data) not checked.
 - The specific reason for lowering accelerated digestion to 60 °C, the definition of the semi-tryptic <1% figure, and the definition of the 80%/95% protein overlap figure: unclear in the main text and not stated in the SI either; Figure S4 is an image, and its panel values were not extracted.
 - The exact proteomics gradient profile: the SI only says gradients were optimized from in-house quality controls, with no gradient table.
+- A same-batch protein comparison of the n-butanol system vs pure-ACN SP3 (identification counts, missed cleavages, GRAVY distributions): not performed in the paper.
+- The reason for diluting Rapid Digestion Buffer to 75%, and the effect of residual extraction solvent on the digestion mixture when washing is omitted: not separately stated or tested in the paper.
