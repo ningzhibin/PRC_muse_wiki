@@ -26,3 +26,6 @@
   - [超快低流速 LC-MS：柱后死体积是隐形杀手](lc/post-column-dead-volume.md)
 - 细胞外囊泡
   - [ExoCarta、Vesiclepedia vs MISEV2023：两个数据库，一个指南](ev/exocarta-vs-misev2023.md)
+- 样品制备
+  - [在 tip 里还是在 tip 上酶解：六种固相酶解的几何位置与代价](sample-prep/in-tip-digestion-geometries.md)
+  - [SP3 肽段回捕：消化后 95% ACN 这一步要不要留](sample-prep/sp3-peptide-cleanup.md)
