@@ -7,12 +7,24 @@ Proteomics knowledge base. Each topic is a standalone Markdown file.
 
 ## Topics
 
+### Paper deep reads
+
+- [Salivary proteomics + metaproteomics: molecular/taxonomic signatures of T2D](papers/saliva-t2d-metaproteomics.md)
+- [MassNet: a billion-scale AI-ready mass spectral corpus](papers/massnet-billion-scale-corpus.md)
+- [Histone propionylation optimization + DIA window scheme comparison (the source of N34)](papers/histone-propionylation-dia-n34.md)
+- [Villette et al. 2025 Parkinson's multi-omics — the metaproteomics (MP) layer dissected](papers/villette-2025-parkinson-multiomics.md)
+- [DDA / DIA de novo sequencing status — the Casanovo family and Cascadia](papers/denovo-dda-dia-casanovo-cascadia.md)
+- [Suresh & Zhang 2025 — comprehensive comparison of 9 plasma EV isolation methods](papers/suresh-zhang-2025-ev-isolation-comparison.md)
+- [Protein Aggregation Capture for Top-Down Proteomics](papers/feltenstein-drown-2026-pac-topdown.md)
+- [Rapid multi-omics sample preparation for mass spectrometry (BAMM)](papers/muehlbauer-2023-bamm-multiomics.md)
+
 ### DIA
 
 - [Scoring-model training strategies: global pretraining vs per-run learning](dia/scoring-pretrain-vs-perrun.md)
 - [DIA-BERT notes](dia/diabert-notes.md)
 - [FDR control: levels and contexts](dia/fdr-levels-and-contexts.md)
 - [Pooled multi-enzyme single-shot DIA: one pooled-digest acquisition + union library, one search](dia/pooled-multi-enzyme-dia.md)
+- [Where ZT Scan DIA's 1342 Hz comes from: scan-rate definitions are not comparable](dia/zt-scan-dia-scan-rate.md)
 
 ### Spectral libraries
 
@@ -21,3 +33,24 @@ Proteomics knowledge base. Each topic is a standalone Markdown file.
 ### Deep learning
 
 - [What is a gradient: derivatives, partial derivatives, and grad in code](deep-learning/gradient-grad.md)
+
+### Peptidoglycan
+
+- [PGLang cheat sheet, for proteomics people](peptidoglycan/pglang-cheatsheet.md)
+
+### Post-translational modifications
+
+- [S-acylation enrichment (Acyl-RAC) needs no special search parameters](ptm/s-acylation-acylrac-search-params.md)
+
+### Chromatography
+
+- [Post-column dead volume: the hidden killer of ultra-fast low-flow LC-MS](lc/post-column-dead-volume.md)
+
+### Extracellular vesicles
+
+- [ExoCarta, Vesiclepedia vs MISEV2023: two databases, one guideline](ev/exocarta-vs-misev2023.md)
+
+### Sample preparation
+
+- [Digestion in the tip or on the tip: where six solid-phase digestion geometries put the protein](sample-prep/in-tip-digestion-geometries.md)
+- [SP3 peptide cleanup: should the post-digestion 95% ACN recapture step stay?](sample-prep/sp3-peptide-cleanup.md)
