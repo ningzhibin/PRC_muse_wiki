@@ -1,5 +1,6 @@
 - [Home](README.md)
 - Paper deep reads
+  - [MetaUmbra: genome-level presence inference from metaproteomic peptides](papers/metaumbra-genome-presence-inference.md)
   - [Salivary proteomics + metaproteomics: molecular/taxonomic signatures of T2D](papers/saliva-t2d-metaproteomics.md)
   - [MassNet: a billion-scale AI-ready mass spectral corpus](papers/massnet-billion-scale-corpus.md)
   - [Histone propionylation optimization + DIA window scheme comparison (the source of N34)](papers/histone-propionylation-dia-n34.md)
