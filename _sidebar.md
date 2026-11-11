@@ -1,5 +1,6 @@
 - [首页](README.md)
 - 文献精读
+  - [MetaUmbra：从宏蛋白质组肽段做基因组水平存在性推断](papers/metaumbra-genome-presence-inference.md)
   - [唾液蛋白质组 + 宏蛋白质组找 T2D 分子/分类学特征](papers/saliva-t2d-metaproteomics.md)
   - [MassNet：十亿级 AI-ready 质谱语料库](papers/massnet-billion-scale-corpus.md)
   - [组蛋白丙酰化优化 + DIA 窗口方案比较（N34 的出处）](papers/histone-propionylation-dia-n34.md)
